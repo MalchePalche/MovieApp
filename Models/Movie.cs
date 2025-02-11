@@ -1,14 +1,15 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace IMDB_Clone_Web_App.Data.Models
+namespace IMDB_Clone_Web_App.Models
 {
     public class Movie
     {
-        [Key]
         public int Id { get; set; }
         public string Title { get; set; }
-        public string Genre { get; set; }
-        public string Description { get; set; }
+        public string Cast { get; set; }
+        public string Summary { get; set; }
+        public int GenreId { get; set; }
+        public Genre Genre { get; set; }
         public DateTime ReleaseDate { get; set; }
     }
 }

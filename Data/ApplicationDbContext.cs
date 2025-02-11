@@ -1,4 +1,4 @@
-﻿using IMDB_Clone_Web_App.Data.Models;
+﻿using IMDB_Clone_Web_App.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace IMDB_Clone_Web_App.Data
@@ -11,7 +11,10 @@ namespace IMDB_Clone_Web_App.Data
         }
 
         public DbSet<Movie> Movies { get; set; }
-        // Add your DbSets (tables) here later
+        public DbSet<Genre> Genres { get; set; }
+        public DbSet<User> Users { get; set; }
+        public DbSet<Review> Reviews { get; set; }
+        public DbSet<Role> Roles { get; set; }
     }
 }
 
